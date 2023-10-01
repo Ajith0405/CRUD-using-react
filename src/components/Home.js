@@ -1,5 +1,6 @@
 import React from 'react'
 import img1 from './background.avif'
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -7,8 +8,13 @@ function Home() {
         <div className='d-flex justify-content-center mb-5'>
         <i  className="fa-solid fa-people-roof fa-2xl" style={{color:'black', fontSize:'80px'}}></i>
         </div>
+        <div className='d-flex justify-content-end'>
+        <Link className="btn btn-info mb-2 me-4" style={{color:'black',fontSize:'20px', fontWeight:'bolder'}} to={'/Create'}><i className="fa-solid fa-plus"></i> Add New Employee</Link>
+        <Link className="btn btn-info mb-2" style={{color:'black',fontSize:'20px', fontWeight:'bolder'}} to={'/Read'}><i class="fa-solid fa-list-check"></i> All Employee Details</Link>
+        </div>
         <h2 className='text-center bg-dark text-light py-3 rounded-3'>Employee Management</h2>
-            <img className='' src={img1} alt='background' style={{width:'100%',}}></img>
+        
+            <img className='rounded-3' src={img1} alt='background' style={{width:'100%',}}></img>
     </div>
   )
 }
