@@ -44,7 +44,7 @@ function Read() {
       <div className='d-flex justify-content-end'>
         <button className='btn btn-primary p-1 '><Link to={'/Create'} style={{ color: 'white', textDecoration: 'none' }}><i className="fa-solid fa-plus fa-lg"></i> Add Employeee </Link> </button>
       </div>
-      <div className='table-responsive'>
+      <div className='card mt-2 p-3 table-responsive' style={{minHeight:'50vh'}}>
 
         <table className="table table-striped ">
           <thead>
